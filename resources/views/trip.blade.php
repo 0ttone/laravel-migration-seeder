@@ -7,6 +7,8 @@
       <title>migration-seeder-Trip</title>
 </head>
 <body>
-      <h1>view trip che sarà associata al TripController</h1>
+      <h1>view 'trip' che è associata percorso / e controllata nei metodi dal TripController</h1>
+
+      <span>questo</span>
 </body>
 </html>
