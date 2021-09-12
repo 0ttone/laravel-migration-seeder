@@ -10,7 +10,8 @@ class TripController extends Controller
 {
     public function homepage(){
 
-      return view('trip');
+      $allTrips=Trip::all();
+      return view('trip', compact('allTrips'));
  
     }
 }
