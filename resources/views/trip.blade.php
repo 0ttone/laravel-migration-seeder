@@ -7,7 +7,18 @@
       <title>migration-seeder-Trip</title>
 </head>
 <body>
-      <h1>view 'trip' che è associata percorso / e controllata nei metodi dal TripController</h1>
+      <h1>Le destinazioni</h1>
+      @foreach ($allTrips as $trip)
+      <div class="travel">
+            <h2>{{$trip->country}}</h2>
+            <img src="{{$trip->img}}" alt="img-cover">
+            <div>Destinazione:{{$trip->destination}}</div>
+            <div>Mezzo:{{$trip->transfer}}</div>
+            <div>Prezzo:{{$trip->price}}</div>
+            <div>Durata:{{$trip->duration}}</div>
+      </div>
+
+      @endforeach
 
       <span>questo</span>
 </body>
